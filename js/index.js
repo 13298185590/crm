@@ -121,7 +121,7 @@ $(function(){
             if((text=='客户管理') && !/customerall/.test(power) || (text=='组织结构') && !/(userhandle|departhandle|jobhandle)/.test(power)){
             alert('抱歉,你还没有权限访问')
             return}
-            if(index==initIndex) return
+            // if(index==initIndex) return
             $(this).addClass('active').siblings().removeClass("active")
             handGroup(index)
         })
